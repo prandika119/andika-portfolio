@@ -26,10 +26,10 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "DB_CONNECTION": "mysql",
-        "DB_PORT": "3306",
-        "DB_HOST": "sql209.ezyro.com",
-        "DB_DATABASE": "ezyro_38167414_andika_portfolio",
-        "DB_USERNAME": "ezyro_38167414",
-        "DB_PASSWORD": "80204df78"
+        "DB_PORT": "3307",
+        "DB_HOST": "uhkp3.h.filess.io",
+        "DB_DATABASE": "portfolio_famoushold",
+        "DB_USERNAME": "portfolio_famoushold",
+        "DB_PASSWORD": "241321d58cb8e351e2e7e4b3023ac9daa86fe29a"
     }
 }
