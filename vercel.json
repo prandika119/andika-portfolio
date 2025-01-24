@@ -1,23 +1,19 @@
 {
     "version": 2,
+    "framework": null,
     "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.6.0"
-        }
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
-        {
-            "src": "/storage/(.*)",
-            "dest": "public/storage"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
+    "public": true,
+    "buildCommand": "vite build",
+    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://andika-portfolio-blush.vercel.app",
         "APP_KEY": "base64:lpz6s3wHuOaK/1XdaW+MPHCY554mFGqCB5raamzs9RA=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
@@ -28,7 +24,12 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
-    },
-    "outputDirectory": "public"
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "mysql",
+        "DB_PORT": "3306",
+        "DB_HOST": "sql209.ezyro.com",
+        "DB_DATABASE": "ezyro_38167414_andika_portfolio",
+        "DB_USERNAME": "ezyro_38167414",
+        "DB_PASSWORD": "80204df78"
+    }
 }
