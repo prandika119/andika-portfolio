@@ -4,7 +4,7 @@
         <div class="container mx-auto p-6">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 lg:w-1/2">
-                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->project }}" class="w-full rounded-lg shadow-lg">
+                    <img src="{{ route('storage.image', $project->image) }}" alt="{{ $project->project }}" class="w-full rounded-lg shadow-lg">
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h2 class="text-3xl font-semibold text-primary mb-6">{{ $project->project }}</h2>

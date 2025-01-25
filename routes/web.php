@@ -21,7 +21,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/project/{project}', [ProjectController::class, 'show'])->name('project.show');
 Route::get('storage/{filename}', function ($filename)
 {
-    $path = storage_path('app/public/' . $filename);
+    $path = public_path('/picture/' . $filename);
 
     if (!File::exists($path)) {
         abort(404);
