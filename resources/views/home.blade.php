@@ -74,7 +74,7 @@
                 @foreach($projects as $project)
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-10">
-                            <img src="{{asset('storage/'. $project->image)}}" alt="Project 1" class="w-full">
+                            <img src="{{route('storage.image', $project->image)}}" alt="Project 1" class="w-full">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold text-dark mb-2">{{$project->project}}</h3>
                                 <p class="text-base text-dark mb-4">{!! $project->content !!}</p>
