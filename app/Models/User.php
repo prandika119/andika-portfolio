@@ -26,7 +26,7 @@ class User extends Authenticatable
 
     public function canAccessPanel(Panel $panel): bool
     {
-        return $this->email === 'an.prasetya9@gmail.com';
+        return true;
     }
     /**
      * The attributes that should be hidden for serialization.

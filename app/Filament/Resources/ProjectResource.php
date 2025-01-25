@@ -38,6 +38,7 @@ class ProjectResource extends Resource
                 FileUpload::make('image')
                     ->label('Image')
                     ->image()
+                    ->disk('public_uploads')
                     ->required(),
                 RichEditor::make('content')
                     ->label('Content')
